@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background: #000;
+
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links{
+    position: relative;
+    text-decoration: none;
+    color:#eee;
+    letter-spacing: 2px;
+    font-family: verdana;
+    padding: 12px;
+    margin: 0 18px;
+    
+}
+
+.nav-links::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    transition: width 0.2s ease-out;
+    background: #ff5151;
+}
+
+.nav-links:hover::before{
+    width: 100%;
+}
+
